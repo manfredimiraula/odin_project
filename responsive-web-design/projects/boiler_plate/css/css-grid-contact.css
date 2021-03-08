@@ -1,0 +1,53 @@
+* {
+  /* remove margin and padding to all */
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  grid-area: header;
+  background-color: darkgray;
+}
+.title {
+  grid-area: title;
+  background-color: darkred;
+}
+
+.title h1 {
+  text-align: center;
+}
+
+.title p {
+  text-align: justify;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.form {
+  grid-area: form;
+  background-color: deepskyblue;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: darksalmon;
+}
+
+.container {
+  display: grid;
+  border-style: solid;
+  border-color: black;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: 1fr 2fr 4fr 1fr;
+  grid-gap: 10px;
+  grid-template-areas:
+    "header header header"
+    "right-side title left-side"
+    "right-side form left-side"
+    "footer footer footer";
+  font-size: 2rem;
+  /* using the vw/vh will take advantage of the vewport size */
+  width: 100vw;
+  min-height: 100vh;
+  background-color: blanchedalmond;
+}

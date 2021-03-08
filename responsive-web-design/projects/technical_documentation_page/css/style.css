@@ -1,0 +1,35 @@
+#navbar {
+  display: inline-block;
+  width: 20%;
+  left: 0;
+}
+
+#main-doc {
+  display: inline-block;
+  border: solid;
+  float: right;
+  width: 70%;
+}
+
+/* Desktop menu */
+@media all and (max-width: 400px) {
+  .menu {
+    display: flex-start;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+  }
+
+  li {
+    float: left;
+    width: auto;
+  }
+}

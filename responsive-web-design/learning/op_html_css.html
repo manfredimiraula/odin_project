@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Lobster"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <style>
+      /* custom veriables created in the :root can be used in the entire DOM and stylesheet as they will be inherited  */
+      :root {
+        --background-map: gray;
+      }
+      .injected-text {
+        margin-bottom: -25px;
+        text-align: center;
+      }
+
+      .box {
+        border-style: solid;
+        border-color: black;
+        border-width: 5px;
+        text-align: center;
+      }
+
+      .yellow-box {
+        background-color: yellow;
+        padding: 10px;
+      }
+
+      .red-box {
+        background-color: crimson;
+        color: #fff;
+        padding: 10px;
+      }
+
+      .blue-box {
+        background-color: blue;
+        color: #fff;
+        padding: 40px 20px 20px 40px;
+      }
+
+      .red-text {
+        color: red;
+      }
+
+      h2 {
+        font-family: Lobster, monospace;
+      }
+
+      p {
+        font-size: 16px;
+        font-family: monospace;
+        color: var(--background-map);
+      }
+
+      .thick-green-border {
+        border-color: green;
+        border-width: 10px;
+        border-style: solid;
+        border-radius: 50%;
+      }
+
+      .smaller-image {
+        width: 100px;
+      }
+
+      .silver-background {
+        background-color: silver;
+      }
+
+      #cat-photo-form {
+        background-color: green;
+      }
+
+      [type="checkbox"] {
+        margin: 10px 0 15px 0;
+      }
+    </style>
+    <title>
+      Tester page from FreeCodeCamp Responsive Web Design Basic, HTML & HTML5
+    </title>
+  </head>
+  <body>
+    <h2>CatPhotoApp</h2>
+
+    <!-- the main element allow for SEO to make main content accessible -->
+    <main>
+      <!-- the attribute target= "_blank" causes the link to open in a new page -->
+      <a href="https://freecatphotoapp.com" target="_blank">cat photos</a>
+
+      <img
+        class="smaller-image thick-green-border"
+        src="https://bit.ly/fcc-relaxing-cat"
+        alt="A cute orange cat lying on its back."
+      />
+
+      <a href="#footer">Jump to Bottom</a>
+
+      <p class="red-text">
+        Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching
+        attack your ankles chase the red dot, hairball run catnip eat the grass
+        sniff.
+      </p>
+
+      <p>
+        Purr jump eat the grass rip the couch scratched sunbathe, shed
+        everywhere rip the couch sleep in the sink fluffy fur catnip scratched.
+      </p>
+
+      <div class="silver-background">
+        <ul>
+          <li>cat nip</li>
+          <li>laser pointers</li>
+          <li>lasagna</li>
+        </ul>
+        <p>Top 3 things cats hate:</p>
+        <ol>
+          <li>laserlight</li>
+          <li>zombies</li>
+          <li>kids</li>
+        </ol>
+      </div>
+
+      <!-- <h5 class="injected-text">margin</h5>
+
+      <div class="box yellow-box">
+        <h5 class="box red-box">padding</h5>
+        <h5 class="box blue-box">padding</h5>
+      </div>
+    </br> -->
+
+      <form
+        id="cat-photo-form"
+        action="https://freecatphotoapp.com/submit-cat-photo"
+      >
+        <label for="indoor"
+          ><input
+            id="indoor"
+            type="radio"
+            name="indoor-outdoor"
+            value="indoor"
+            checked
+          />
+          Indoor</label
+        >
+        <label for="outdoor"
+          ><input
+            id="outdoor"
+            type="radio"
+            name="indoor-outdoor"
+            value="outdoor"
+          />
+          Outdoor</label
+        ><br />
+        <label for="loving"
+          ><input
+            id="loving"
+            type="checkbox"
+            name="personality"
+            value="loving"
+            checked
+          />
+          Loving</label
+        >
+        <label for="lazy"
+          ><input id="lazy" type="checkbox" name="personality" value="lazy" />
+          Lazy</label
+        >
+        <label for="energetic"
+          ><input
+            id="energetic"
+            type="checkbox"
+            name="personality"
+            value="energetic"
+          />
+          Energetic</label
+        ><br />
+        <input type="text" placeholder="cat photo URL" required />
+        <button type="submit">Submit</button>
+      </form>
+
+      <footer id="footer">Copyright Cat Photo App</footer>
+    </main>
+  </body>
+</html>

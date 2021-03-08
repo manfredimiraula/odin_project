@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>TEMPLATE</title>
+    <meta name="description" content="TEMPLATE" />
+    <meta name="author" content="Manfredi Miraula" />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Font Awesome  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <header class="flex-container" id="header">
+      <nav id="nav-bar">
+        <div>
+          <ul class="menu">
+            <li>
+              <img src="img/flash.png" style="width: 50px" id="header-img" />
+            </li>
+            <li class="nav-link" href="#features">
+              <a href="#features">Features</a>
+            </li>
+            <li class="nav-link" href="#features">
+              <a href="#how-it-works">How it works</a>
+            </li>
+            <li class="nav-link" href="#features">
+              <a href="#pricing">Pricing</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <section>
+      <form
+        id="form"
+        action="https://www.freecodecamp.com/email-submit"
+        method="POST"
+      >
+        <div class="form-input">
+          <h2>Subscribe to our mail list for more educational content</h2>
+          <label for="email" id="email-label">
+            <input
+              id="email"
+              type="email"
+              name="email"
+              value=""
+              placeholder="Insert your user email"
+              required
+            />
+          </label>
+          <div id="submit-button">
+            <label for="submit">
+              <input id="submit" type="submit" />
+            </label>
+          </div>
+        </div>
+      </form>
+    </section>
+    <section id="features">
+      <div>
+        <h2>Constantly updated courses</h2>
+        <p>
+          The courses are uptaded every quarter to give you the most recent
+          content for each topic
+        </p>
+      </div>
+      <div>
+        <h2>Top educators</h2>
+        <p>The courses are prepared and verified by top professors at UniX</p>
+      </div>
+      <div>
+        <h2>Need a schedule? ... or not? No problem!</h2>
+        <p>The courses can be taken in a self-paced or structured way</p>
+      </div>
+    </section>
+    <br />
+    <section id="how-it-works">
+      <div class="videowrapper">
+        <iframe
+          id="video"
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/9P6rdqiybaw"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </section>
+    <br />
+    <section id="pricing">
+      <div>
+        <h2>Lite learner</h2>
+        <p><strong>$30 per month</strong></p>
+        <p>Lore impsum</p>
+      </div>
+      <div>
+        <h2>Average learner</h2>
+        <p><strong>$70 per month</strong></p>
+        <p>Lore impsum</p>
+      </div>
+      <div>
+        <h2>Pro learner</h2>
+        <p><strong>$120 per month</strong></p>
+        <p>Lore impsum</p>
+      </div>
+    </section>
+    <br />
+
+    <footer class="footer"></footer>
+    <!-- <script src="js/scripts.js"></script> -->
+  </body>
+</html>

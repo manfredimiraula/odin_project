@@ -1,0 +1,66 @@
+html {
+  /* Setting a base font size of 10px give us easier rem calculations
+           Info: 1rem === 10px, 1.5rem === 15px, 2rem === 20px and so forth
+         */
+  font-size: 10px;
+}
+
+body {
+  /* Native font stack https://getbootstrap.com/docs/4.2/content/reboot/#native-font-stack */
+  font-family: "Akaya Telivigala", cursive, "Roboto", "Helvetica Neue", Arial,
+    sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  /* text-align: center; */
+  color: whitesmoke;
+  margin: 0;
+  background: url(../img/background.jpg) no-repeat;
+  background-size: cover;
+  background-color: #cccccc;
+}
+
+h1 {
+  font-size: 4rem;
+  text-align: center;
+}
+
+p {
+  font-size: 2rem;
+  text-align: center;
+}
+
+/* # CSS grid */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: 1fr 4fr;
+  gap: 55px 0px;
+  grid-template-areas:
+    "right-side title left-side"
+    "right-side form left-side";
+}
+
+.title {
+  grid-area: title;
+}
+
+.form {
+  grid-area: form;
+}
+
+/* Form */
+.survey-form {
+  display: inline-block;
+  width: 300px;
+  text-align: left !important;
+}
+
+.form-input p {
+  display: inline-block;
+}
+
+#submit-button {
+  display: inline-block;
+  width: 300px;
+  text-align: left;
+}

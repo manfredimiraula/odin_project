@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>TEMPLATE</title>
+    <meta name="description" content="TEMPLATE" />
+    <meta name="author" content="Manfredi Miraula" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <section class="container">
+      <div class="title">
+        <h1 id="title">Your Jedi character</h1>
+        <p id="description">
+          This form allows you to build your character features for a game of
+          Star Wars D&D
+        </p>
+      </div>
+      <div class="form">
+        <form id="survey-form">
+          <div class="form-input">
+            <label for="name" id="name-label"
+              >Insert your name
+              <input
+                id="name"
+                type="text"
+                name="name"
+                value=""
+                placeholder="Insert yout name"
+                required
+              />
+            </label>
+          </div>
+          <div class="form-input">
+            <label for="email" id="email-label"
+              >Insert your email
+              <input
+                id="email"
+                type="email"
+                name="email"
+                value=""
+                placeholder="Insert your user email"
+                required
+              />
+            </label>
+          </div>
+          <div class="form-input">
+            <label for="number" id="number-label">
+              Insert your phone number
+              <input
+                id="number"
+                type="number"
+                name="number"
+                value=""
+                placeholder="Insert yout personal pin code"
+                max="1000"
+                min="0"
+                required
+              />
+            </label>
+          </div>
+          <div class="form-input">
+            <label>
+              Choose your role
+              <select id="dropdown">
+                <option value="Padawan">Padawan</option>
+                <option value="Jedi">Jedi</option>
+                <option value="Jedi Master">Jedi Master</option>
+                <option value="Yoda">Yoda</option>
+              </select>
+            </label>
+          </div>
+          <div class="form-input">
+            <label for="jedi-power"
+              ><input
+                id="jedi-power-heal"
+                type="radio"
+                name="jedi-power"
+                value="indoor"
+                checked
+              />
+              Heal</label
+            >
+          </div>
+          <div class="form-input">
+            <label for="jedi-power"
+              ><input
+                id="jedi-power-electricity"
+                type="radio"
+                name="jedi-power"
+                value="electricity"
+              />
+              Electrical grip</label
+            >
+          </div>
+          <div class="form-input">
+            <label for="jedi-power"
+              ><input
+                id="jedi-power-push"
+                type="radio"
+                name="jedi-power"
+                value="push"
+              />
+              Push</label
+            >
+          </div>
+          <div class="form-input">
+            <label for="style"
+              ><input
+                id="double-saber"
+                type="checkbox"
+                name="style"
+                value="double-saber"
+              />
+              Double Saber</label
+            >
+          </div>
+          <div class="form-input">
+            <label for="style"
+              ><input id="gunner" type="checkbox" name="style" value="gunner" />
+              Gunner</label
+            >
+          </div>
+          <div class="form-input">
+            <label for="style"
+              ><input
+                id="double-handed"
+                type="checkbox"
+                name="style"
+                value="double-handed"
+              />
+              Double Wielder</label
+            >
+          </div>
+          <div class="form-input">
+            <p>
+              <label>Additional Comments?</label>
+              <textarea id="myTextArea" rows="3" cols="20">
+Share your most interesting adventure</textarea
+              >
+            </p>
+          </div>
+          <div id="submit-button">
+            <input id="submit" type="submit" />
+          </div>
+        </form>
+        <footer class="footer"></footer>
+      </div>
+    </section>
+    <!-- <script src="js/scripts.js"></script> -->
+  </body>
+</html>

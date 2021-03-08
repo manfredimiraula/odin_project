@@ -1,0 +1,151 @@
+<style>
+  body {
+    background-color: white;
+    background: url("https://cdn-media-1.freecodecamp.org/imgr/MJAkxbh.png");
+  }
+  header {
+    background-color: #09a7a1;
+    color: white;
+    padding: 0.25em;
+  }
+  nav {
+    /* here using the hue, saturation, lightnss model (hsl) */
+    background-color: hsl(180, 80%, 25%);
+  }
+  h2 {
+    color: #09a7a1;
+  }
+  button {
+    background-color: #ff790e;
+  }
+  footer {
+    background-color: #09a7a1;
+    color: white;
+    padding: 0.5em;
+  }
+  div {
+    border-radius: 20px;
+    width: 70%;
+    height: 400px;
+    margin: 50px auto;
+    background: linear-gradient(35deg, #ccffff, #ffcccc);
+  }
+  div:hover {
+    transform: scale(1.1);
+  }
+  #repeatedgradient {
+    border-radius: 20px;
+    width: 70%;
+    height: 400px;
+    margin: 50px auto;
+    background: repeating-linear-gradient(
+      45deg,
+      yellow 0px,
+      yellow 40px,
+      black 80px,
+      black 120px
+    );
+  }
+  .ball {
+    width: 40px;
+    height: 40px;
+    margin: 50 auto;
+    position: absolute;
+    background: linear-gradient(35deg, black, #ffcccc);
+    border-radius: 50%;
+  }
+  #ball1 {
+    left: 20%;
+    transform: scale(1.5);
+  }
+  #ball2 {
+    left: 65%;
+  }
+  .center {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    border-radius: 50%;
+    box-shadow: 25px 10px 0px 0px blue;
+  }
+  .heart {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: pink;
+    height: 50px;
+    width: 50px;
+    transform: rotate(45deg);
+  }
+  .heart::after {
+    background-color: pink;
+    content: "";
+    border-radius: 50%;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 0px;
+    left: 25px;
+  }
+  .heart::before {
+    content: "";
+    background-color: pink;
+    border-radius: 50%;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: -25px;
+    left: 0px;
+  }
+</style>
+<header>
+  <h1>Cooking with FCC!</h1>
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Classes</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+  <article>
+    <h2>Machine Learning in the Kitchen</h2>
+    <p>
+      Join this two day workshop that walks through how to implement
+      cutting-edge snack-getting algorithms with a command line interface.
+      Coding usually involves writing exact instructions, but sometimes you need
+      your computer to execute flexible commands, like
+      <code>fetch Pringles</code>.
+    </p>
+    <div></div>
+    <div class="center"></div>
+    <div id="repeatedgradient"></div>
+    <button>Sign Up</button>
+  </article>
+  <article>
+    <h2>Bisection Vegetable Chopping</h2>
+    <div class="ball" id="ball1"></div>
+    <div class="ball" id="ball2"></div>
+    <p>
+      This week-long retreat will level-up your coding ninja skills to actual
+      ninja skills. No longer is the humble bisection search limited to sorted
+      arrays or coding interview questions, applying its concepts in the kitchen
+      will have you chopping carrots in O(log n) time before you know it.
+    </p>
+
+    <button>Sign Up</button>
+  </article>
+  <div class="heart"></div>
+</main>
+<br />
+<footer>&copy; 2018 FCC Kitchen</footer>
