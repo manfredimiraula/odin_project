@@ -1,0 +1,180 @@
+* {
+  /* remove margin and padding to all */
+  margin: 0;
+  padding: 0;
+  font-family: arial, sans-serif;
+}
+
+p {
+  font-size: 13px;
+}
+
+h1 {
+  font-size: 25px;
+}
+
+.logo-search {
+  margin-top: 30px;
+}
+
+.google-logo {
+  margin-left: 20px;
+  padding-top: 20px;
+  width: 100px;
+  float: left;
+}
+
+.google-logo img {
+  width: 100px;
+  float: left;
+}
+
+.search-bar {
+  border: solid;
+  border-width: thin;
+  border-radius: 50px;
+  border-color: gray;
+  display: inline-block;
+  margin-left: 50px;
+  width: 60%;
+  height: 50px;
+  margin-top: 10px;
+}
+
+.search-selection {
+  margin-left: 180px;
+}
+
+ul {
+  display: block;
+  border: 0;
+  list-style-type: none;
+  overflow: hidden;
+  background-color: white;
+}
+
+li {
+  float: left;
+  width: auto;
+  margin-top: 20px;
+  padding-right: 40px;
+  font-size: 13px;
+}
+
+hr {
+  margin-top: 15px;
+  height: 1px;
+  background-color: lightgray;
+  box-shadow: none;
+}
+
+.search-results {
+  margin-left: 180px;
+  margin-top: 10px;
+}
+
+.result-box {
+  margin-left: 180px;
+  margin-top: 20px;
+  width: 600px;
+}
+
+.search-suggestion {
+  margin-left: 180px;
+  margin-top: 20px;
+  width: 600px;
+}
+
+.similar-searches {
+  margin-left: 180px;
+  margin-top: 20px;
+  width: 600px;
+}
+
+.similar-searches h2 {
+  margin-bottom: 20px;
+}
+
+#left {
+  display: inline-block;
+  height: auto;
+  width: 250px;
+}
+
+#right {
+  display: inline-block;
+  width: 250px;
+  height: auto;
+  margin-left: 50px;
+}
+
+#left-item {
+  border: solid;
+  border-width: thin;
+  border-radius: 50px;
+  border-color: gray;
+  background-color: lightgray;
+  display: inline-block;
+  text-align: center;
+  width: 250px;
+  height: 40px;
+}
+
+#left-item p {
+  padding-top: 10px;
+}
+
+#right-item {
+  border: solid;
+  border-width: thin;
+  border-radius: 50px;
+  border-color: gray;
+  background-color: lightgray;
+  display: inline-block;
+  text-align: center;
+  width: 250px;
+  height: 40px;
+}
+
+#right-item p {
+  padding-top: 10px;
+}
+
+.google-page {
+  margin-left: 400px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+
+  width: 200px;
+  float: left;
+}
+
+.google-page img {
+  display: block;
+  width: 100px;
+}
+
+#next-pages p {
+  display: inline-block;
+  width: 200px;
+}
+
+.footer {
+  list-style-type: none;
+  margin: 0;
+  padding-top: 30px;
+  overflow: hidden;
+  background-color: lightgray;
+  margin-top: 20px;
+  height: 100px;
+  width: 100%; /* Full width */
+}
+
+#footer-first-row {
+  margin-left: 200px;
+}
+
+#footer-second-row {
+  margin-left: 200px;
+  margin-top: 20px;
+}
