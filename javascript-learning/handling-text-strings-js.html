@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<!-- Tutorial: https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Strings -->
+<html>
+  <head>
+    <title>Page Title</title>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <button>Press Me</button>
+    <script>
+      let string = "The revolution will not be televised.";
+      string;
+      let badString = string;
+      badString;
+      console.log(badString);
+      //////////////
+      let escapeCharacters = " I've got no right to take my place ... ";
+      console.log(escapeCharacters);
+
+      let one = "Hello";
+      let two = " world";
+      let concatenate = one + two;
+      console.log(concatenate);
+
+      const button = document.querySelector("button"); //?
+      button.onclick = function () {
+        // when clicking button
+        let name = prompt("What is your name?"); // ask name to user and set var
+        alert("Hello " + name + ", nice to meet you!"); // print string plus name
+      };
+      ///////////
+      let myDate = "19" + "67";
+      console.log(typeof myDate);
+
+      let myString = "123";
+      let myNum = Number(myString);
+      console.log(typeof myNum);
+      console.log(typeof myString);
+
+      let myNumber = 123;
+      let myString2 = myNumber.toString();
+      console.log(typeof myNumber);
+      console.log(typeof myString);
+
+      // we can use template literals for complex string concatenation
+      let score = 9;
+      let highestScore = 10;
+      let song = `Fight the Youth`;
+      let output =
+        'I like the song "' +
+        song +
+        '". I gave it a score of ' +
+        (score / highestScore) * 100 +
+        "%.";
+      console.log(output);
+
+      // using template literal is easier
+      let outputTemplate = `i like the song "${song}" I gave it a score of  ${
+        (score / highestScore) * 100
+      } %`;
+      console.log(outputTemplate);
+
+      let examScore = 45;
+      let examHighestScore = 70;
+      let examReport = `You scored ${examScore}/${examHighestScore} (${Math.round(
+        (examScore / examHighestScore) * 100
+      )}%). ${
+        examScore >= 49
+          ? "Well done, you passed!"
+          : "Bad luck, you didn't pass this time."
+      }`;
+      console.log(examReport);
+
+      // split text into multiple lines with \n or using templates
+      let output2 =
+        'I like the song "' +
+        song +
+        '".\nI gave it a score of ' +
+        (score / highestScore) * 100 +
+        "%.";
+      console.log(output2);
+      let output3 = `I like the song "${song}".
+      I gave it a score of ${(score / highestScore) * 100}%.`;
+      console.log(output3);
+
+      // Methods for strings
+      let str = "Please locate where 'locate' occurs!";
+      let len = str.length;
+      console.log(len);
+      // lastIndexOf can be used as well lastIndexOf(substring, start position)
+      let index = str.indexOf("where 'locate'");
+      console.log(index);
+
+      let pos = str.search("occurs");
+      console.log(pos);
+
+      // Slice and dice strings
+      let sliced = str.slice(0, 16); // it accepts negative positions as well
+      console.log(sliced);
+
+      let substr = str.substr(3, 16); // arg: start, lenght
+      console.log(substr);
+
+      let replace = str.replace("locate", "where");
+      console.log(replace);
+
+      let replaceAll = str.replace(/locate/g, "where");
+      console.log(replaceAll);
+
+      let allUpper = str.toUpperCase();
+      let allLower = str.toLowerCase();
+      console.log(allUpper + allLower);
+
+      let strSpace = "     Manfredi wants       ";
+      let trimmed = strSpace.trim();
+      console.log(strSpace);
+      console.log(trimmed);
+
+      // extract string characters
+      console.log(str.charAt(12));
+
+      // convert string to array
+      console.log(str.split(",")); // split on comas
+      console.log(str.split(" ")); // split on space
+      console.log(str.split("-")); // split on -
+    </script>
+  </body>
+</html>

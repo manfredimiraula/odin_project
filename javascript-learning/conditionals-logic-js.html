@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<!-- Tutorial: https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Strings -->
+<html>
+  <head>
+    <title>Page Title</title>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <button>Press Me</button>
+    <script>
+      // // conditionals
+      // let hour = 22;
+      // if (hour < 19) {
+      //   console.log("good afternoon");
+      // } else if (hour <= 24) {
+      //   ("goon evening");
+      // } else {
+      //   console.log("good morning");
+      // }
+
+      // // logical operators
+      // if (1 || 0) {
+      //   // works like True or False
+      //   console.log("thruty!");
+      // }
+
+      // if (null || 1) {
+      //   console.log(
+      //     "null evaluates to false, 1 evaluates to true, 1 is returned"
+      //   );
+      // } else if (null || 0 || 1) {
+      //   console.log(
+      //     "null evaluates to false, 0 evaluates to false, 1 evaluates to true, 1 is returned"
+      //   );
+      // } else if (undefined || null || 0) {
+      //   console.log("all evaluates to false, 0 is returned");
+      // }
+
+      // // OR evaluates all the args and report the first true value or the last if all args are false
+      // let firstName = "";
+      // let lastName = "";
+      // let nickName = "";
+      // console.log(firstName || LastName || nickName || "Anonymous");
+
+      // // short circuit evaluation onlly execute if the left side is false
+      // true || alert("not printed");
+      // false || alert("printed");
+
+      // alert(true && true); // true
+      // alert(false && true); // false
+      // alert(true && false); // false
+      // alert(false && false); // false
+
+      // // the and operation, given multiple args transform each to True values from left to right, when it encounters the first False stops and return that, if all operands are true it reports the last true value \
+
+      // // Boolean not
+      // alert(!true); // false
+      // alert(!0); // true
+      // alert(!!"non-empty string"); // true
+      // alert(!!null); // false
+
+      // if (age >= 14 && age <= 90) {
+      //   console.log("correct");
+      // }
+
+      // if (!(age >= 14 && age <= 90))
+      //   if (age <= 14 || age >= 90)
+
+      // // basic if else statement
+      // let shoppingDone = False;
+      // let childAllowance; // here we declare the variable but not set it yet
+
+      // if (shoppingDone == True) {
+      //   childAllowance = 10;
+      // } else {
+      //   childAllowance = 5;
+      // }
+
+      // // write a code that ask a login with prompt
+      // let userChecker = prompt("Who's there", "");
+
+      // if (userChecker === "Admin") {
+      //   let passwordChecker = prompt("Password?", "");
+
+      //   if (passwordChecker === "The Master") {
+      //     alert("Welcome!");
+      //   } else if (passwordChecker === null || passwordChecker === "") {
+      //     alert("Canceled");
+      //   } else {
+      //     alert("Wrong password");
+      //   }
+      // } else if (userChecker === "" || userChecker === null) {
+      //   alert("Canceled");
+      // } else {
+      //   ("I don't know you");
+      // }
+
+      //https://javascript.info/ifelse
+      // name of JavaScript
+      // let whatName = prompt("What's the name of JavaScript?");
+
+      // if (whatName === "ECMAScript") {
+      //   alert("You're right!");
+      // } else {
+      //   alert("You don’t know? ECMAScript!");
+      // }
+
+      // show the sign
+      // let giveNum = prompt("Give me a number!");
+
+      // if (giveNum > 0) {
+      //   alert(1);
+      // } else if (giveNum < 0) {
+      //   alert(-1);
+      // } else {
+      //   alert(0);
+      // }
+
+      // rewrite if statment into ?
+      let result;
+
+      if (a + b < 4) {
+        result = "Below";
+      } else {
+        result = "Over";
+      }
+      // this is equal to the above
+      let result = a + b < 4 ? "Below" : "Over";
+
+      // another example
+      let message;
+
+      if (login == "Employee") {
+        message = "Hello";
+      } else if (login == "Director") {
+        message = "Greetings";
+      } else if (login == "") {
+        message = "No login";
+      } else {
+        message = "";
+      }
+
+      let message = login == "Employee" ? "Hello" : "";
+      login == "Director" ? "Greetings" : "";
+      login == "" ? "No login" : "";
+      ("");
+    </script>
+  </body>
+</html>

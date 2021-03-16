@@ -1,0 +1,72 @@
+# Variables
+- Vriables are used to store inormation.
+- To "declare" (e.g. create) a variable we can use the operator "let"
+- We can show the content of a variable using the function "alert" (e.g. like print)
+- We can also declare multiple variables at the same time
+
+## Variable naming
+- when var name contains multiple words, camelCase is used
+- Variable names are case sensitive
+
+## Variable declaration
+- "use strict" for compatibility
+- will always need to declare the variable appropriately
+
+## Constant 
+- in order to declare a constant use "const"
+- const canno be reassigned like variables
+- best practice to declare variables difficult to remember as all upper case. It is best practice to declare constants known prior to execution (hard coded) in this way
+
+## Naming conventions and best practices
+- Use human-readable names like userName or shoppingCart.
+- Stay away from abbreviations or short names like a, b, c, unless you really know what you’re doing.
+- Make names maximally descriptive and concise. Examples of bad names are data and value. Such names say nothing. It’s only okay to use them if the context of the code makes it exceptionally obvious which data or value the variable is referencing.
+- Agree on terms within your team and in your own mind. If a site visitor is called a “user” then we should name related variables currentUser or newUser instead of currentVisitor or newManInTown.
+
+# Data Types
+- Number 
+- BigInt
+- string
+- Boolean
+- "null" value; special value of it own == unknown
+- "undefined" it means value not assigned; reserved as the default initial value for unassigned things
+## Primitives
+- Objects are used to store data collections or complex entities
+- Symbols are used to create unique identifiers for objects
+- typeof is the same as the function (type() in python)
+
+# Numbers
+
+## Types
+- JS has only one type of numbers
+- numbers can be written with or without decimals and big numbers can be written with the exponential notation
+- NaN are non valid numbers and cannot be used to do operations
+- hexadecimal 
+- By default, JavaScript displays numbers as base 10 decimals. But you can use the toString() method to output numbers from base 2 to base 36.
+- Hexadecimal is base 16. Decimal is base 10. Octal is base 8. Binary is base 2.
+
+## Opearations
+- operation in JS is not precise. Operation with decimals can be imprecise, so it is convenient to ,ultiply and divide instead
+- In JS the operator "+" is used to add numbers and concatenate strings
+- In case of string and number addition, the output is a string
+- If the variable is a string with number content, the operators "\", "*" and "-" will work as numerical operators. "+" will work as concatenate
+- If NaN is used in mathematical operations the resul will be NaN or a concatenation
+- Infinity (- infinity) is the value for operations outside JS maximum values
+- the operator "==" compare only the content. So a var 123 == "123" will lead to True
+- the operator "===" compare content and type So a var 123 === "123" will lead to False
+- Remainder with the operator "%". the remainder is the left over after the matematic operation division. i.e. 5/2 = 2 plus 1 as remainder, thus 5%2 gives 1
+- Increment operator "++" (e.g. += in py); there is also a decrement operator "--";
+- The plus sign is powerful. It can convert data types to numbers (e.g. same as function Number())
+- Exponentiation operator like in py "**"
+- We can declare and make operations on the same variable
+
+## Unary, binary, operand
+- operands (arguments) are the numbers to which the operation is applied to
+- if the opearto has only one argument is called unary
+- if the oeprator has two operands is called binary
+
+## Objects
+- numbers can be defined as Objects. This is a bad practice
+- Objects cannot be compared
+
+
