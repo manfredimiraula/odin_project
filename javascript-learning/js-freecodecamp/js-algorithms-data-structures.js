@@ -566,3 +566,152 @@ function sum(arr, n) {
   }
   // Only change code above this line
 }
+
+// Setup
+var contacts = [
+  {
+    firstName: "Akira",
+    lastName: "Laine",
+    number: "0543236543",
+    likes: ["Pizza", "Coding", "Brownie Points"],
+  },
+  {
+    firstName: "Harry",
+    lastName: "Potter",
+    number: "0994372684",
+    likes: ["Hogwarts", "Magic", "Hagrid"],
+  },
+  {
+    firstName: "Sherlock",
+    lastName: "Holmes",
+    number: "0487345643",
+    likes: ["Intriguing Cases", "Violin"],
+  },
+  {
+    firstName: "Kristian",
+    lastName: "Vos",
+    number: "unknown",
+    likes: ["JavaScript", "Gaming", "Foxes"],
+  },
+];
+
+// Search within an array of contacts. Screen if the name property or the property itself is part of the array
+// Complex excercise
+function lookUpProfile_original_version(name, prop) {
+  // Correct but imperfect.
+  for (var i = 0; i < contacts.length; i++) {
+    // console.log(contacts[i].hasOwnProperty(prop))
+    if (contacts[i]["firstName"] === name && contacts[i].hasOwnProperty(prop)) {
+      return contacts[i][prop];
+      // console.log(contacts[i][prop])
+    } else if (contacts[i]["firstName"] !== name) {
+      return "No such contact";
+    } else if (contacts[i].hasOwnProperty(prop) === false) {
+      return "No such property";
+    } else {
+      return "Something went wrong";
+    }
+  }
+  // Only change code above this line
+}
+
+function lookUpProfile(name, prop) {
+  for (var i = 0; i < contacts.length; i++) {
+    if (contacts[i]["firstName"] === name) {
+      if (contacts[i].hasOwnProperty(prop)) {
+        return contacts[i][prop];
+      } else {
+        return "No such property";
+      }
+    }
+  }
+  return "No such contact";
+}
+
+function lookUpProfile_v2(name, prop) {
+  for (let i = 0; i < contacts.length; i++) {
+    if (contacts[i].firstName === name) {
+      if (prop in contacts[i]) {
+        return contacts[i][prop];
+      } else {
+        return "No such property";
+      }
+    }
+  }
+  return "No such contact";
+}
+
+lookUpProfile("Harry", "likes");
+
+// generator random numbers
+function randomFraction() {
+  return Math.random();
+}
+
+// Generator of integer up to 9 (the multiplication make it so that the generator never quite reaches 10)
+function randomWholeNum() {
+  return Math.floor(Math.random() * 10);
+}
+
+// Generator of integer within a range min/max.
+// The function inside creates the Range. i.e. if myMax = 10 and myMin = 0, the funtion gets to 10-0+1 )11 + 0 so the upper bound is 11. The lower bound is always 0 as per Math.random(). Adding the myMin at the end changes that, making the min at least eauquals to myMin if rand equals to 0
+function randomRange(myMin, myMax) {
+  return Math.floor(Math.random() * (myMax - myMin + 1) + myMin);
+}
+
+// simple function that converts to Int from str
+function convertToInteger(str) {
+  return parseInt(str);
+}
+
+convertToInteger("56");
+
+// converts strings integer to binary numbers
+function convertToInteger(str) {
+  return parseInt(str, 2);
+}
+
+convertToInteger("10011");
+
+// Ternary operator
+// The ternary operator pseudo code is a :b ? contacts; here
+// a is the CSSConditionRule, b is the code that will execute if a == True and c is the code executed if a == false
+function checkEqual(a, b) {
+  return a == b ? "Equal" : "Not Equal";
+}
+
+checkEqual(1, 2);
+
+// multiple ternary operators. I think is more readable to use if/else, however this format is more concise
+function checkSign(num) {
+  return num > 0 ? "positive" : num < 0 ? "negative" : "zero";
+}
+
+checkSign(10);
+
+// Use recursive functions to create a decreasing integer array
+function countdown(n) {
+  if (n < 1) {
+    return [];
+  } else {
+    const countArray = countdown(n - 1);
+    countArray.unshift(n);
+    return countArray;
+  }
+}
+// Only change code above this line
+
+console.log(countdown(5));
+
+// recursively create an array of increasing numbers between a defined range
+function rangeOfNumbers(startNum, endNum) {
+  if (startNum === endNum) {
+    return [startNum];
+  } else if (startNum <= endNum) {
+    const numbers = rangeOfNumbers(startNum, endNum - 1);
+    numbers.push(endNum);
+    return numbers;
+  }
+}
+
+rangeOfNumbers(1, 6);
